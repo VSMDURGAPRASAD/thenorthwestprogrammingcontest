@@ -14,6 +14,11 @@
 		F6025392223B036A0031A034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6025390223B036A0031A034 /* LaunchScreen.storyboard */; };
 		F602539D223B036A0031A034 /* The_Northwest_Programming_ContestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602539C223B036A0031A034 /* The_Northwest_Programming_ContestTests.swift */; };
 		F60253A8223B036A0031A034 /* The_Northwest_Programming_ContestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253A7223B036A0031A034 /* The_Northwest_Programming_ContestUITests.swift */; };
+		F60253B6223B142E0031A034 /* SchoolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253B5223B142E0031A034 /* SchoolsTableViewController.swift */; };
+		F60253B8223B14B70031A034 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253B7223B14B70031A034 /* TeamsTableViewController.swift */; };
+		F60253BA223B15140031A034 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253B9223B15140031A034 /* StudentsViewController.swift */; };
+		F60253BC223B15400031A034 /* NewSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253BB223B15400031A034 /* NewSchoolViewController.swift */; };
+		F60253BE223B15740031A034 /* NewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253BD223B15740031A034 /* NewTeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F60253A3223B036A0031A034 /* The Northwest Programming ContestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Northwest Programming ContestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60253A7223B036A0031A034 /* The_Northwest_Programming_ContestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Northwest_Programming_ContestUITests.swift; sourceTree = "<group>"; };
 		F60253A9223B036A0031A034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60253B5223B142E0031A034 /* SchoolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewController.swift; sourceTree = "<group>"; };
+		F60253B7223B14B70031A034 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		F60253B9223B15140031A034 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		F60253BB223B15400031A034 /* NewSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolViewController.swift; sourceTree = "<group>"; };
+		F60253BD223B15740031A034 /* NewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,11 @@
 				F6025387223B03690031A034 /* AppDelegate.swift */,
 				F6025389223B03690031A034 /* ViewController.swift */,
 				F602538B223B03690031A034 /* Main.storyboard */,
+				F60253BD223B15740031A034 /* NewTeamViewController.swift */,
+				F60253BB223B15400031A034 /* NewSchoolViewController.swift */,
+				F60253B9223B15140031A034 /* StudentsViewController.swift */,
+				F60253B7223B14B70031A034 /* TeamsTableViewController.swift */,
+				F60253B5223B142E0031A034 /* SchoolsTableViewController.swift */,
 				F602538E223B036A0031A034 /* Assets.xcassets */,
 				F6025390223B036A0031A034 /* LaunchScreen.storyboard */,
 				F6025393223B036A0031A034 /* Info.plist */,
@@ -256,7 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60253B6223B142E0031A034 /* SchoolsTableViewController.swift in Sources */,
 				F602538A223B03690031A034 /* ViewController.swift in Sources */,
+				F60253B8223B14B70031A034 /* TeamsTableViewController.swift in Sources */,
+				F60253BC223B15400031A034 /* NewSchoolViewController.swift in Sources */,
+				F60253BE223B15740031A034 /* NewTeamViewController.swift in Sources */,
+				F60253BA223B15140031A034 /* StudentsViewController.swift in Sources */,
 				F6025388223B03690031A034 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

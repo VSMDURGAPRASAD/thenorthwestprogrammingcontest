@@ -13,7 +13,7 @@
         <!--Teams-->
         <scene sceneID="CyA-y4-9O9">
             <objects>
-                <tableViewController id="lHg-v0-Rio" sceneMemberID="viewController">
+                <tableViewController id="lHg-v0-Rio" customClass="TeamsTableViewController" customModule="The_Northwest_Programming_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NYA-jG-sac">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
         <!--Schools-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Northwest_Programming_Contest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SchoolsTableViewController" customModule="The_Northwest_Programming_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="2Nt-bH-dhH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KKt-OD-QJL"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--New School View Controller-->
         <scene sceneID="0KY-Qh-ECo">
             <objects>
-                <viewController id="eBA-ZG-oDF" sceneMemberID="viewController">
+                <viewController id="eBA-ZG-oDF" customClass="NewSchoolViewController" customModule="The_Northwest_Programming_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XO6-RA-MXj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1180" y="955.77211394302856"/>
         </scene>
-        <!--View Controller-->
+        <!--New Team View Controller-->
         <scene sceneID="rSE-Gs-lHi">
             <objects>
-                <viewController id="glp-ye-A73" sceneMemberID="viewController">
+                <viewController id="glp-ye-A73" customClass="NewTeamViewController" customModule="The_Northwest_Programming_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qXd-w3-Ql8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
