@@ -19,6 +19,10 @@
 		F60253BA223B15140031A034 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253B9223B15140031A034 /* StudentsViewController.swift */; };
 		F60253BC223B15400031A034 /* NewSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253BB223B15400031A034 /* NewSchoolViewController.swift */; };
 		F60253BE223B15740031A034 /* NewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60253BD223B15740031A034 /* NewTeamViewController.swift */; };
+		F63BC51C223C1EDB008078CF /* team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63BC51B223C1EDB008078CF /* team.swift */; };
+		F63BC51E223C1EF0008078CF /* school.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63BC51D223C1EF0008078CF /* school.swift */; };
+		F63BC520223C1F7E008078CF /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63BC51F223C1F7E008078CF /* School.swift */; };
+		F63BC522223C1F98008078CF /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63BC521223C1F98008078CF /* Schools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		F60253B9223B15140031A034 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		F60253BB223B15400031A034 /* NewSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolViewController.swift; sourceTree = "<group>"; };
 		F60253BD223B15740031A034 /* NewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamViewController.swift; sourceTree = "<group>"; };
+		F63BC51B223C1EDB008078CF /* team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = team.swift; sourceTree = "<group>"; };
+		F63BC51D223C1EF0008078CF /* school.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = school.swift; sourceTree = "<group>"; };
+		F63BC51F223C1F7E008078CF /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		F63BC521223C1F98008078CF /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 		F602537B223B03680031A034 = {
 			isa = PBXGroup;
 			children = (
+				F63BC51D223C1EF0008078CF /* school.swift */,
 				F6025386223B03690031A034 /* The Northwest Programming Contest */,
 				F602539B223B036A0031A034 /* The Northwest Programming ContestTests */,
 				F60253A6223B036A0031A034 /* The Northwest Programming ContestUITests */,
@@ -118,6 +127,9 @@
 				F602538E223B036A0031A034 /* Assets.xcassets */,
 				F6025390223B036A0031A034 /* LaunchScreen.storyboard */,
 				F6025393223B036A0031A034 /* Info.plist */,
+				F63BC51B223C1EDB008078CF /* team.swift */,
+				F63BC51F223C1F7E008078CF /* School.swift */,
+				F63BC521223C1F98008078CF /* Schools.swift */,
 			);
 			path = "The Northwest Programming Contest";
 			sourceTree = "<group>";
@@ -274,10 +286,14 @@
 				F60253B6223B142E0031A034 /* SchoolsTableViewController.swift in Sources */,
 				F602538A223B03690031A034 /* ViewController.swift in Sources */,
 				F60253B8223B14B70031A034 /* TeamsTableViewController.swift in Sources */,
+				F63BC520223C1F7E008078CF /* School.swift in Sources */,
 				F60253BC223B15400031A034 /* NewSchoolViewController.swift in Sources */,
+				F63BC51C223C1EDB008078CF /* team.swift in Sources */,
 				F60253BE223B15740031A034 /* NewTeamViewController.swift in Sources */,
 				F60253BA223B15140031A034 /* StudentsViewController.swift in Sources */,
+				F63BC522223C1F98008078CF /* Schools.swift in Sources */,
 				F6025388223B03690031A034 /* AppDelegate.swift in Sources */,
+				F63BC51E223C1EF0008078CF /* school.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -91,7 +91,7 @@ class TeamsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "teamtablename" {
             let studentVC = segue.destination as! StudentsViewController
-            studentVC.teamName = schoolName.teams[tableView.indexPathForSelectedRow!.row]
+            studentVC.teamgroupName = schoolName.teams[tableView.indexPathForSelectedRow!.row]
         }else if segue.identifier == "newtableteam" {
             let studentVC = segue.destination as! NewTeamViewController
             studentVC.newschoolTeam = schoolName

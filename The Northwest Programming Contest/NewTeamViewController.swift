@@ -26,7 +26,7 @@ class NewTeamViewController: UIViewController {
         let student1 = student1TF.text!
         let student3 = student3TF.text!
         
-        newschoolTeam.addTeam(team:Team(name: tName, students: [student0,student1,student2]))
+        newschoolTeam.addTeam(team:Team(name: tName, students: [student0,student1,student3]))
         
         self.dismiss(animated: true, completion: nil) // instead of using an unwind segue
     }

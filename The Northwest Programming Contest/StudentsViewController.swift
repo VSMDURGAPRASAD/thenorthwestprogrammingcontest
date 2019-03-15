@@ -6,15 +6,20 @@
 //  Copyright © 2019 Vinukonda,Sai Manikanta Durga Prasad. All rights reserved.
 //
 
+import UIKit
+
 class StudentsViewController: UIViewController {
     
-    var teamName : Team!
+    var teamgroupName : Team!
     
-    @IBOutlet weak var stu0LBL: UILabel!
+    @IBOutlet weak var student0LBL: UILabel!
     
-    @IBOutlet weak var stu1LBL: UILabel!
     
-    @IBOutlet weak var stu2LBL: UILabel!
+    @IBOutlet weak var student1LBL: UILabel!
+    
+    
+    
+    @IBOutlet weak var student2LBL: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +27,10 @@ class StudentsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = teamName.name
-        stu0LBL.text = "\(teamName.students[0])"
-        stu1LBL.text = "\(teamName.students[1])"
-        stu2LBL.text = "\(teamName.students[2])"
+        navigationItem.title = teamgroupName.name
+        student0LBL.text = "\(teamgroupName.students[0])"
+        student1LBL.text = "\(teamgroupName.students[1])"
+        student2LBL.text = "\(teamgroupName.students[2])"
     }
     
     /*
