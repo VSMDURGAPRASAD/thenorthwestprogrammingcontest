@@ -39,7 +39,7 @@ class TeamsTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "teamtablename", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "team", for: indexPath)
         cell.textLabel?.text = schoolName.teams[indexPath.row].name
         return cell
     }

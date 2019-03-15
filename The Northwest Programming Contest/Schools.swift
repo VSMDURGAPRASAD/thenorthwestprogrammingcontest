@@ -19,6 +19,7 @@ class Schools {
     func numSchools() -> Int{
         return schools.count
     }
+    
     subscript(index:Int) -> School {
         return schools[index]
     }
@@ -27,6 +28,7 @@ class Schools {
     func addSchool(school:School) {
         schools.append(school)
     }
+    
     
     func delete(school:School){
         for i in 0 ..< schools.count {

@@ -8,6 +8,7 @@
 
 import Foundation
 class School :CustomStringConvertible {
+    //Properties
     var name: String
     var coach: String
     var teams: [Team]

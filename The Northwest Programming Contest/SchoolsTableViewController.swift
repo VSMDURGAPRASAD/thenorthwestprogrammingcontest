@@ -35,7 +35,7 @@ class SchoolsTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "schooltablename", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "school", for: indexPath)
         
         cell.textLabel?.text = Schools.shared[indexPath.row].name
         cell.detailTextLabel?.text = Schools.shared[indexPath.row].coach
@@ -94,7 +94,7 @@ class SchoolsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "studentseguename" {
+        if segue.identifier == "schoolteams" {
             let schoolnameTVC = segue.destination as! TeamsTableViewController
             schoolnameTVC.schoolName = Schools.shared[tableView.indexPathForSelectedRow!.row]
         }
