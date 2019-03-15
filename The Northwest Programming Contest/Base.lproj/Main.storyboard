@@ -23,7 +23,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="le7-qD-R7J">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="teamtablename" id="le7-qD-R7J">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="le7-qD-R7J" id="mFo-oC-8gd">
@@ -31,7 +31,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="le1-db-fPE" kind="show" trigger="accessoryAction" id="EHs-n8-smC"/>
+                                    <segue destination="le1-db-fPE" kind="show" identifier="teamtablename" trigger="accessoryAction" id="EHs-n8-smC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Teams" id="idW-g7-eZY">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NuF-XE-Xvr">
                             <connections>
-                                <segue destination="glp-ye-A73" kind="presentation" id="oC8-9b-ftV"/>
+                                <segue destination="glp-ye-A73" kind="presentation" identifier="newtableteam" id="oC8-9b-ftV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -127,8 +127,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Add New School" id="BeM-Vi-UFk">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sbt-MA-35h"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ovo-Fu-r2q"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sbt-MA-35h">
+                                            <connections>
+                                                <action selector="cancel:" destination="eBA-ZG-oDF" id="vB5-zh-ujs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ovo-Fu-r2q">
+                                            <connections>
+                                                <action selector="done:" destination="eBA-ZG-oDF" id="hRE-32-jwH"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -164,6 +172,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yxp-oU-SeP"/>
                     </view>
+                    <connections>
+                        <outlet property="coachTF" destination="Rpm-qW-led" id="PjZ-NZ-kI3"/>
+                        <outlet property="nameTF" destination="at4-x7-ugc" id="Sce-pP-8Nr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQq-Gv-QtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,8 +194,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Add New Team" id="GXR-zV-dgR">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6FY-pn-83y"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZQM-r3-KCF"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6FY-pn-83y">
+                                            <connections>
+                                                <action selector="cancel:" destination="glp-ye-A73" id="hnD-TI-eha"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZQM-r3-KCF">
+                                            <connections>
+                                                <action selector="done:" destination="glp-ye-A73" id="OaH-0s-VgH"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -214,6 +234,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="done:" destination="glp-ye-A73" eventType="editingDidEnd" id="qR9-Jg-043"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TeamName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKy-M1-uWh">
                                 <rect key="frame" x="26" y="139" width="133" height="21"/>
@@ -247,6 +270,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FTW-gt-Lvp"/>
                     </view>
+                    <connections>
+                        <outlet property="student0TF" destination="kDS-wt-uFy" id="vwN-CG-99C"/>
+                        <outlet property="student1TF" destination="n6f-Vg-YSq" id="taX-fQ-Zhk"/>
+                        <outlet property="student3TF" destination="h6i-M5-5jj" id="qlp-Hd-Whk"/>
+                        <outlet property="teamNameTF" destination="TfH-xj-fwW" id="1JK-Zm-qn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eT-iA-yyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,7 +284,7 @@
         <!--Students-->
         <scene sceneID="9Co-Ob-Gto">
             <objects>
-                <viewController id="le1-db-fPE" sceneMemberID="viewController">
+                <viewController id="le1-db-fPE" customClass="StudentsViewController" customModule="The_Northwest_Programming_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfD-r8-1pZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,6 +336,11 @@
                         <viewLayoutGuide key="safeArea" id="MVk-Wh-g5l"/>
                     </view>
                     <navigationItem key="navigationItem" title="Students" id="FSs-2l-ZbX"/>
+                    <connections>
+                        <outlet property="stu0LBL" destination="coy-1r-foe" id="TXY-se-ARX"/>
+                        <outlet property="stu1LBL" destination="kGz-7F-Aus" id="Pna-Go-mOY"/>
+                        <outlet property="stu2LBL" destination="3ke-qf-1QQ" id="wsG-JE-cP9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhy-Hy-eXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
